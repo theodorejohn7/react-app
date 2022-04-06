@@ -34,6 +34,20 @@ class ExpenseItem extends React.Component{
             </div>
           );
     }
+
+
+    componentDidMount()
+    {
+      console.log("inside componentDidMount");
+    }
+
+
+  componentWillUnmount() {
+    console.log("component will unmount");
+        
+  }
+
+
 }
 
 export default ExpenseItem;

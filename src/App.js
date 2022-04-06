@@ -4,7 +4,7 @@ import "./App.css";
 import React from 'react';
 
 import ExpenseItem from "./components/ExpenseItem";
-import { render } from "@testing-library/react";
+// import { render } from "@testing-library/react";
 
 // Class App extends React.Component{
 
@@ -41,6 +41,8 @@ import { render } from "@testing-library/react";
 
 
 function App() {
+
+  console.log('inside App()');
   const expenses = [
     {
       id: "e1",
@@ -69,6 +71,7 @@ function App() {
   ];
   return (
     <div className="App">
+      <div>{console.log("inside return function")}</div>
       <ExpenseItem
         title={expenses[0].title}
         amount={expenses[0].amount}
